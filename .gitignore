@@ -2,5 +2,5 @@
 __pycache__/
 *.py[cod]
 .env
-.streamlit/secrets.tomlm
+.streamlit/secrets.toml
 .DS_Store
