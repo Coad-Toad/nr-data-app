@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Netrunner Stats</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A calculator for the Netrunner card game">
+	<meta property="og:site_name" content="Netrunner Stats">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Netrunner Stats">
+	<meta property="og:description" content="A calculator for the Netrunner card game">
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Null-Signal-Games/netrunnerdb/refs/heads/main/web/images/nsg-logo.png">
+	<link rel="stylesheet" media="all" href="filename='/css/styles.css'">
+</head>
+
+<body>
+
+	<div class="skip-links">
+		<ul>
+			<li><a href="#main">Skip to main content</a></li>
+			<li><a href="#footer">Skip to footer</a></li>
+		</ul>
+	</div>
+
+	<div id="main" class="main" role="main">
+		<div class="homepage">
+			<div class="inner-flex">
+				<h1 class="homepage-title">Search for <strong>Netrunner</strong> cards</h1>
+				<form class="homepage-form" action="/data/calc.py" accept-charset="UTF-8" method="get">
+					<a class="homepage-logo" rel="nofollow" title="Back to homepage" href="/index.html">
+						<span class="vh">Netrunner Stats</span>
+						<img src="https://raw.githubusercontent.com/Null-Signal-Games/netrunnerdb/refs/heads/main/web/images/nsg-logo.png" style="width:28px;height:28px;margin-top:8px;margin-left:-1px;">
+					</a>
+					<input type="text" name="q" id="q" data-component="homepage-search" class="homepage-form-field" placeholder="Search Netrunner cards" autocomplete="on" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="1024" tabindex="1">
+					<button type="submit" class="visuallyhidden">
+						<span class="vh">Find cards</span>
+					</button>
+				</form>
+
+				<p class="homepage-links">
+					<a class="button-n inverted" data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Advanced Search&quot;}" href="advanced.php">Advanced Search</a>
+					<a class="button-n inverted" data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Syntax Guide&quot;}" href="syntax.php">Syntax Guide</a>
+					<a class="button-n inverted" data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Sets&quot;}" href="sets.php">All Sets</a>
+					<a class="button-n inverted" data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Random Card&quot;}" href="test.php">Test Page</a>
+				</p>
+				
+				<div class="homepage-collage">
+					<div class="homepage-collage-cards">
+                        <a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Bran 1.9&quot;}" href="https://netrunnerdb.com/en/card/30039">
+                            <img class="card" alt="" title="Bran 1.0" src="https://card-images.netrunnerdb.com/v2/xlarge/30039.webp">
+                        </a>
+                        <a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Would you like to access?&quot;}" href="https://netrunnerdb.com/en/card/35050">
+                            <img class="card" alt="" title="Would you like to access?" src="https://github.com/mtgred/netrunner/blob/master/resources/public/img/nsg-corp.png?raw=true">
+                        </a>
+                        <a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Trick Shot&quot;}" href="https://netrunnerdb.com/en/card/34087">
+                            <img class="card" alt="" title="Trick Shot" src="https://card-images.netrunnerdb.com/v2/xlarge/34087.webp">
+                        </a>
+                        <a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Diversion of Funds&quot;}" href="https://netrunnerdb.com/en/card/21105">
+                            <img class="card" alt="" title="Diversion of Funds" src="https://card-images.netrunnerdb.com/v2/large/21105.jpg">
+                        </a>
+                        <a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Stimhack&quot;}" href="https://netrunnerdb.com/en/card/01004">
+                            <img class="card" alt="" title="Stimhack" src="https://card-images.netrunnerdb.com/v2/large/01004.jpg">
+                        </a>
+                        <a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Measured Response&quot;}" href="https://netrunnerdb.com/en/card/35078">
+                            <img class="card" alt="" title="Measured Response" src="https://card-images.netrunnerdb.com/v2/xlarge/35078.webp">
+                        </a>
+						<a data-track="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;NBN: Controlling the Message&quot;}" href="https://netrunnerdb.com/en/card/11017">
+							<img class="card" alt="" title="NBN: Controlling the Message" src="https://card-images.netrunnerdb.com/v2/large/11017.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer id="footer" class="footer">
+			<div class="inner-flex">
+				<div class="footer-column">
+					<h6>Cards</h6>
+					<ul>
+						<li><a class="footer-link" data-track="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Advanced Search&quot;}" href="/FMADB/advanced.php">Advanced Search</a></li>
+						<li><a class="footer-link" data-track="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Syntax Guide&quot;}" href="/FMADB/syntax.php">Syntax Guide</a></li>
+						<li><a class="footer-link" data-track="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;Navigate&quot;,&quot;label&quot;:&quot;Sets&quot;}" href="/FMADB/sets.php">All Sets</a></li>
+						<li><a id="account-decks-footer-link" class="footer-link vh" href="/account/decks">Your Decks</a></li>
+						<li><a class="footer-link" href="/FMADB/random">Random Card</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
